@@ -36,23 +36,14 @@ def read_from_hash(hash, key)
    hash[key]
 end
 
-=begin
+
 def update_counting_hash(hash, key)
   if hash[key]
     hash[key] += 1
+    hash
   else
     hash[key] = 1
     hash
-  end
-end
-=end
-
-
-def update_counting_hash(hash, key)
-  if hash[key]
-    hash[key] += 1
-  else
-    hash[key] = 1
   end
 end
 
